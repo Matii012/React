@@ -1,0 +1,21 @@
+.category button{
+    background-color: purple;
+    border-radius: 20%;
+    border: none;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: wheat;
+    text-shadow: 2px 3px 5px black;
+    text-transform: capitalize;
+}
+
+.category button:hover{
+    background-color: rgb(209, 64, 209);
+    cursor: pointer;
+}
+
+.category{
+    display: flex;
+    gap: 5px;
+    
+}

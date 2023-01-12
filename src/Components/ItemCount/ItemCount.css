@@ -1,0 +1,20 @@
+.box-count{
+    display: flex;
+    gap: 20px;
+}
+
+.box-count button{
+    display: flex;
+    background-color: purple;
+    border: none;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 0.2rem;
+}
+
+.box-count-children{
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

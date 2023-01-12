@@ -1,0 +1,14 @@
+.shop{
+    font-size: 20px;
+    color: white;
+}
+
+.icon-container{
+    display: flex;
+}
+
+.numero{
+    background-color: rgba(255, 0, 0, 0.637);
+    padding: 5%;
+    border-radius: 100%;
+}

@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:hover {
+  color: rgb(92, 0, 121);
+}
+
+header {
+  background-color: rgb(150, 71, 253);
+  padding: 10px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  list-style: none;
+}
+
+h1 {
+  padding: 5px 5px;
+  color: rgb(78, 0, 180);
+  font-family: sans-serif;
+}/*# sourceMappingURL=NavBar.css.map */
