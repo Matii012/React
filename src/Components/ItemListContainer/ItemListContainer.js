@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
-import { useState } from 'react'
+
 //styles
 import './ItemListContainer.css'
 //components
@@ -14,23 +14,7 @@ import ItemList from '../ItemList/ItemList'
 /* -------------------------------------------------------------------------- */
 /*                                   Lógica                                   */
 /* -------------------------------------------------------------------------- */
-const ItemListContainer = () => { //función Constructora
-
-    // const [categoria,setCategoria] = useState("all")
-
-    // const categoriaHogar= () =>{
-    //     setCategoria("hogar")
-    // }
-
-    // const categoriaTete= () =>{
-    //     setCategoria("tete")
-    // }
-
-    // const categoriaTodo= () =>{
-    //     setCategoria("all")
-    // }
-
-
+const ItemListContainer = (props) => { //función Constructora
 
 
     return ( //retorno que renderiza
@@ -38,7 +22,6 @@ const ItemListContainer = () => { //función Constructora
 
     <div>
 
-            <p>Item List Container</p>
 
         <div className='category'>
             {/* <button onClick={categoriaHogar}>hogar</button>
@@ -47,7 +30,7 @@ const ItemListContainer = () => { //función Constructora
         </div>
             <ItemList/>
 
-        </div>
+    </div>
     )
 }
 

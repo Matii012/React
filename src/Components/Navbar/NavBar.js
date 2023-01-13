@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
+import { Link } from 'react-router-dom'
 //styles
 import './NavBar.css'
 import CardWidget from '../CardWidget/CarWidget'
@@ -19,18 +20,15 @@ const NavBar = (props) =>{ //función Constructora
     return( //retorno que renderiza
         <header>
             <nav>
-                <h1>Bears Shop</h1>
+                <h1 className='title'><Link to="/">Bears Shop</Link></h1>
                     <li>
-                        <a href='...'>Inicio</a>
+                        <Link to ="/">Inicio</Link>
                     </li>
                     <li>
-                        <a href='...'>Tienda</a>
+                        <Link to ="/Productos">Productos</Link>
                     </li>
                     <li>
-                        <a href='...'>Nosotros</a>
-                    </li>
-                    <li>
-                        <a href='...'>Contáctenos</a>
+                        <Link to ="/Contáctenos">Contáctenos</Link>
                     </li>
                     
                     <div className='number'>

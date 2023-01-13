@@ -3,7 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 //styles
 import './ItemList.css'
 //components
@@ -18,22 +18,12 @@ const ItemList = (props) =>{ //función Constructora
     
     const [productos, setProductos] = useState([])
 
-
-
-    fetch('https://fakestoreapi.com/products')
-    .then(res=>res.json())
-    .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos} /> )))
-
-
-
-
-
-
-
-
-
-
-
+    useEffect(()=>{
+        fetch('https://fakestoreapi.com/products')
+        .then(res=>res.json())
+        .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos} /> )))
+    
+    },[])
 
 
     return( //retorno que renderiza
@@ -41,7 +31,7 @@ const ItemList = (props) =>{ //función Constructora
         <div>
             <p>este es el item list</p>
 
-            <div>
+            <div className='item'>
                 {productos}
             </div>
 

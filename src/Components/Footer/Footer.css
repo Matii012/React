@@ -1,0 +1,12 @@
+footer{
+    background-color: rgb(150, 71, 253);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}

@@ -1,0 +1,21 @@
+.itemDetail-producto{
+    height: 100vh;
+}
+
+
+.button-box{
+    background-color: darkgreen;
+    border: none;
+}
+
+.button-box:hover{
+    background-color: springgreen;
+}
+
+.text-muted *{
+    color: blueviolet;
+}
+
+.text-muted *:hover{
+    color: violet;
+}
