@@ -14,26 +14,33 @@ import CardWidget from '../CardWidget/CarWidget'
 /* -------------------------------------------------------------------------- */
 /*                                   Lógica                                   */
 /* -------------------------------------------------------------------------- */
-const NavBar = (props) =>{ //función Constructora
+const NavBar = (props) => { //función Constructora
 
 
-    return( //retorno que renderiza
+    return ( //retorno que renderiza
         <header>
             <nav>
                 <h1 className='title'><Link to="/">Bears Shop</Link></h1>
-                    <li>
-                        <Link to ="/">Inicio</Link>
-                    </li>
-                    <li>
-                        <Link to ="/Productos">Productos</Link>
-                    </li>
-                    <li>
-                        <Link to ="/Contáctenos">Contáctenos</Link>
-                    </li>
-                    
-                    <div className='number'>
-                        <CardWidget cantidad = "10"/>
-                    </div>
+                <li>
+                    <Link to="/">Inicio</Link>
+                </li>
+                <li>
+                    <Link to="/Productos">Productos</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/jewelery">jewelery</Link>
+                </li>
+                <li>
+                    <Link to="/categoria/electronics">electronics</Link>
+                </li>
+                <li>
+                    <Link to="/Contáctenos">Contáctenos</Link>
+                </li>
+                <li>
+                    <Link to="/Carrito"><div className='number'>
+                        <CardWidget cantidad="10" />
+                    </div></Link>
+                </li>
 
             </nav>
 
@@ -41,7 +48,7 @@ const NavBar = (props) =>{ //función Constructora
 
         </header>
 
-        
+
     )
 }
 

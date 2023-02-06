@@ -3,25 +3,25 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
+import { useState } from 'react';
+
 //styles
-import './AboutUs.css'
+import './Cart.css'
 //components
+
 //core
 
 
 /* -------------------------------------------------------------------------- */
 /*                                   Lógica                                   */
 /* -------------------------------------------------------------------------- */
-const AboutUs = (props) =>{ //función Constructora
-
+const Cart = () =>{ //función Constructora
 
     return( //retorno que renderiza
 
-        <div className='main-section-about'>
-            <p>Contactenos</p>
-        </div>
-
-        
+        <section className='main-section-cart'>
+            <p>hola</p>
+        </section>    
     )
 }
 
@@ -29,4 +29,4 @@ const AboutUs = (props) =>{ //función Constructora
 /*                                Exportaciones                                */
 /* -------------------------------------------------------------------------- */
 
-export default AboutUs
+export default Cart

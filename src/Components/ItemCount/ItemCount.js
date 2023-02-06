@@ -24,6 +24,10 @@ const ItemCount = (props) =>{ //función Constructora
     const AddOne = () => {
         if (count < props.stock) {
             setCount (count + 1)
+
+            props.guardarCantidadAComprar(count)
+            
+
         }
 
     };
@@ -31,23 +35,23 @@ const ItemCount = (props) =>{ //función Constructora
     const DisOne = () => {
         if (count > 0){
             setCount (count - 1)
+
+            props.guardarCantidadAComprar(count)
+
         }
     };
     //Agregar
-    const OnAdd = () =>{
 
-    }
 
 
     return( //retorno que renderiza
 
         <div className='box-count'>
             <div className='box-count-children'>
-                <button onClick={AddOne}>+</button>
+                <button onClick={DisOne} className='btn-dis'>-</button>
                     <p>{count}</p>
-                <button onClick={DisOne}>-</button>
+                <button onClick={AddOne} className='btn-add'>+</button>
             </div>
-            <button>On Add</button>
         </div>    
     )
 }

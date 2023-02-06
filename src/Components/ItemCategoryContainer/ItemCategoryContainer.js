@@ -3,23 +3,31 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
+import { useParams, } from 'react-router-dom'
 //styles
-import './AboutUs.css'
+import './ItemCategoryContainer.css'
 //components
+import ItemCategory from '../ItemCategory/ItemCategory'
 //core
 
 
 /* -------------------------------------------------------------------------- */
 /*                                   Lógica                                   */
 /* -------------------------------------------------------------------------- */
-const AboutUs = (props) =>{ //función Constructora
+const ItemCategoryContainer = () =>{ //función Constructora
+
+    
+    // const [productos, setProductos] = useState([ ])
+
+
+    const {categoriaId} = useParams()
 
 
     return( //retorno que renderiza
 
-        <div className='main-section-about'>
-            <p>Contactenos</p>
-        </div>
+        <section className='main-section-container'>
+            <ItemCategory categoria={categoriaId} />
+        </section>
 
         
     )
@@ -29,4 +37,4 @@ const AboutUs = (props) =>{ //función Constructora
 /*                                Exportaciones                                */
 /* -------------------------------------------------------------------------- */
 
-export default AboutUs
+export default ItemCategoryContainer

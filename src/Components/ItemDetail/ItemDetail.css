@@ -19,3 +19,9 @@
 .text-muted *:hover{
     color: violet;
 }
+.btn-buy{
+    border-radius: 30%;
+    background-color: purple;
+    padding: 10px;
+    border: none;
+}

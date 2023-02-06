@@ -1,14 +1,14 @@
 .box-count{
     display: flex;
     gap: 20px;
+    padding: 2px;
+    border-radius: 15%;
+    justify-content: center;
+    align-items: center;
 }
 
 .box-count button{
-    display: flex;
-    background-color: purple;
     border: none;
-    border-radius: 10%;
-    padding: 10px;
     margin: 0.2rem;
 }
 
@@ -18,3 +18,16 @@
     flex-direction: row;
     align-items: center;
 }
+
+.btn-dis{
+    border-radius: 30%;
+    background-color: purple;
+    padding: 10px;
+}
+
+.btn-add{
+    border-radius: 30%;
+    background-color: purple;
+    padding: 10px;
+}
+

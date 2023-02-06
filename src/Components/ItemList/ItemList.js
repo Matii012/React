@@ -18,17 +18,24 @@ const ItemList = (props) =>{ //función Constructora
     
     const [productos, setProductos] = useState([])
 
+
+
     useEffect(()=>{
+
         fetch('https://fakestoreapi.com/products')
         .then(res=>res.json())
         .then(json=> setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos} /> )))
-    
+
+
     },[])
+
+
+
 
 
     return( //retorno que renderiza
 
-        <div>
+        <div className='main-section'>
             <p>este es el item list</p>
 
             <div className='item'>

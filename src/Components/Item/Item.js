@@ -25,7 +25,7 @@ const Item = (props) => { //función Constructora
 
     return ( //retorno que renderiza
 
-        <div>
+        <div className='main'>
 
 
 
@@ -44,9 +44,6 @@ const Item = (props) => { //función Constructora
                     <Card.Text>{price}</Card.Text>
                     <div className='container-link'>
                         <Link to={`/producto/${title}/${id}`} >Ver Detalles Del Producto</Link>
-                    </div>
-                    <div className='itemCount'> 
-                        <ItemCount stock={10} />
                     </div>
                 </Card.Body>
 

@@ -3,25 +3,42 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
+import { useEffect, useState } from 'react';
 //styles
-import './AboutUs.css'
+import './ItemCategory.css'
 //components
+import Item from '../Item/Item';
 //core
 
 
 /* -------------------------------------------------------------------------- */
 /*                                   Lógica                                   */
 /* -------------------------------------------------------------------------- */
-const AboutUs = (props) =>{ //función Constructora
+const ItemCategory = (props) =>{ //función Constructora
+
+    const [productos, setProductos] = useState([])
+
+    useEffect(() =>{
+        
+        fetch(`https://fakestoreapi.com/products/category/${props.categoria}`)
+        .then(res=>res.json())
+        .then(json=>setProductos(json.map(productos => <Item key={productos.id} id={"producto" + productos.id} data={productos} /> )))
+    
+    },[productos,props.categoria])
+
+
+
+
+
+
 
 
     return( //retorno que renderiza
 
-        <div className='main-section-about'>
-            <p>Contactenos</p>
-        </div>
-
-        
+        <section className='main-section'>
+            {/* <p>este es el item list</p> */}
+            {productos}
+        </section>
     )
 }
 
@@ -29,4 +46,4 @@ const AboutUs = (props) =>{ //función Constructora
 /*                                Exportaciones                                */
 /* -------------------------------------------------------------------------- */
 
-export default AboutUs
+export default ItemCategory

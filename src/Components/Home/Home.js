@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 //modules
+import { useEffect } from 'react'
 //styles
 import './Home.css'
 //components
@@ -15,9 +16,19 @@ import './Home.css'
 const Home = (props) =>{ //función Constructora
 
 
+
+
+
+
+
+
+
+
+
+
     return( //retorno que renderiza
 
-        <div className='main-section'>
+        <div className='main-section-home'>
             <p>Derechos Reservados a @BearsCompany</p>
         </div>
 
